@@ -1,1 +1,1 @@
-# Static-Sign-Language-Recognition-
+# Sign-Language-Recognition-System
