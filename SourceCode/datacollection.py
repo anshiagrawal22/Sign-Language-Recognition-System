@@ -2,7 +2,6 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 import numpy as np
 import math
-import time
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=2  )  # Detect only one hand
@@ -11,8 +10,9 @@ offset = 20  # Margin around the bounding box
 imgSize=300 
 
 #saving images
-folder= r"data\Numerical\9" #r- makes it raw string and python won't treat \0 as escape character
+folder= r"Sign-Language-Recognition-System\data\Numerical\9" #r- makes it raw string and python won't treat \0 as escape character
 counter=0
+number=0
 
 while True:
     success, img = cap.read()
@@ -72,6 +72,7 @@ while True:
         break
     elif key == ord('s'):
         counter += 1
-        filepath = f"{folder}/Image_{int(time.time())}.jpg"
+        filepath = f"{folder}/Image_{number}.jpg"
         cv2.imwrite(filepath, imgWhite) #saves the images  
         print(f"Saved: {filepath} ({counter})")
+        number += 1
