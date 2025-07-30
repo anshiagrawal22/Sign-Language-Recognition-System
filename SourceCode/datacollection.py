@@ -4,7 +4,7 @@ import numpy as np
 import math
 
 cap = cv2.VideoCapture(0)
-detector = HandDetector(maxHands=2  )  # Detect only one hand
+detector = HandDetector(maxHands=1)  # Detect only one hand
 
 offset = 20  # Margin around the bounding box
 imgSize=300 
