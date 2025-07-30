@@ -19,7 +19,7 @@ This project captures and classifies hand gesture data (numbers & alphabets) thr
 
 ## American Sign Language Chart 🗂️
 <p align="center">
-<img src="Sign-Language-Recognition-System\American Sign Language Chart.jpg" alt="ASL Chart" width="460"/> </p>
+<img src="https://arpitsinghgautam.me/assets/img/portfolio/Sign-Detection/Sign-Symbols-Chart.jpg" alt="ASL Chart" width="460"/> </p>
 
 ## Author👩‍💻
 ### **Anshi Agrawal**
