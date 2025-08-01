@@ -2,15 +2,16 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.callbacks import EarlyStopping  # ✅ Added for early stopping
 import os
 
 # Set data path
-data_dir = r'Sign-Language-Recognition-System\data\Numerical' 
+data_dir = r'Sign-Language-Recognition-System\data\Alphabets' 
 
 # Image settings
 img_height, img_width = 64, 64
 batch_size = 32
-num_classes = 10  # digits 0 to 9
+num_classes = 26  # number of digits/alphabets
 
 # Data Augmentation + Preprocessing
 train_datagen = ImageDataGenerator(
@@ -58,14 +59,18 @@ model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 
+# ✅ Add EarlyStopping Callback
+early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+
 # Training the model
 history = model.fit(
     train_gen,
     validation_data=val_gen,
-    epochs=10
+    epochs=40,
+    callbacks=[early_stop]
 )
 
 # Save the model
-model.save('SignLang_CNN_Model.h5')
+model.save('SignLang_CNN_Alphabet_Model.h5')
 
 print("✅ Model trained and saved!")
