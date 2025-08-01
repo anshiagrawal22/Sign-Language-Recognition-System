@@ -1,6 +1,6 @@
 # Sign Language Recognition System 👋
 <p >
-A real-time Sign Language Recognition System using computer vision and deep learning.<br>
+A real-time Sign Language Recognition System made using computer vision and deep learning.<br>
 This project captures and classifies hand gesture data (numbers & alphabets) through a CNN model built with TensorFlow/Keras. It utilizes OpenCV and MediaPipe for accurate hand tracking and gesture recognition.
 </p>
 
@@ -15,7 +15,7 @@ This project captures and classifies hand gesture data (numbers & alphabets) thr
 *Note: This system is designed to work for both right and left-hand signers*
 
 ## Display💻
-*Coming soon: Screenshots or demo video of the working system!*
+[AlphabeticDemo](Sign-Language-Recognition-System\img+demo videos\Demo1_Aphabetic.mp4)
 
 ## American Sign Language Chart 🗂️
 <p align="center">
