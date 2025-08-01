@@ -15,8 +15,7 @@ This project captures and classifies hand gesture data (numbers & alphabets) thr
 *Note: This system is designed to work for both right and left-hand signers*
 
 ## Display💻
-<p align="center">
-<img src="Sign-Language-Recognition-System\Model\workingmodel.jpg" alt="Display" width="460"/> </p>
+![Demo Image](https://drive.google.com/uc?export=view&id=1PNYtO-5r8H3BH7Ut1iNrpRwaLtfmZDK5)
 
 ## American Sign Language Chart 🗂️
 <p align="center">
