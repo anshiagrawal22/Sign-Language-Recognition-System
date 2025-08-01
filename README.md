@@ -16,7 +16,7 @@ This project captures and classifies hand gesture data (numbers & alphabets) thr
 
 ## Display💻
 <p align="center">
-<img src="Sign-Language-Recognition-System\Model\workingmodel.png" alt="ASL Chart" width="460"/> </p>
+<img src="Sign-Language-Recognition-System/Model/workingmodel.png" alt="ASL Chart" width="460"/>
 
 ## American Sign Language Chart 🗂️
 <p align="center">
