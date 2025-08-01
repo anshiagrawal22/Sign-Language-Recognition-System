@@ -3,7 +3,7 @@
 import os
 import cv2
 
-base_path = r'Sign-Language-Recognition-System\data\Numerical\2'#path accordingly
+base_path = r'Sign-Language-Recognition-System\data\Alphabets\A'#path accordingly
 
 # folder existance
 if not os.path.exists(base_path):

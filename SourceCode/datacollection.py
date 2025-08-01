@@ -10,7 +10,7 @@ offset = 20  # Margin around the bounding box
 imgSize=300 
 
 #saving images
-folder= r"Sign-Language-Recognition-System\data\Numerical\9" #r- makes it raw string and python won't treat \0 as escape character
+folder= r"Sign-Language-Recognition-System\data\Alphabets\D" #r- makes it raw string and python won't treat \0 as escape character
 counter=0
 number=0
 
@@ -67,6 +67,11 @@ while True:
 
     cv2.imshow("Image", img) 
     key = cv2.waitKey(1)
+    
+    chart_img = cv2.imread("Sign-Language-Recognition-System\American Sign Language Chart.jpg")
+    cv2.imshow("American Sign Language Chart", chart_img)
+    
+    
     # Exit when 'q' is pressed
     if  key == ord('q'):
         break
